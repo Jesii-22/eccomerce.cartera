@@ -1,5 +1,4 @@
 "use client";
-
 import Image from 'next/image';
 import AddToCart from '@/app/components/AddToCart';
 import { useState } from 'react';
