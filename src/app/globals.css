@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.gap-6{
+  margin-top: 20px;
+}
+
+#formulario{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:flex-start ;
+}
+
+/* AGREGAR AL CARRITO */
+/* Para que el nombre del producto tenga un fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Asegura que haya espacio entre el texto y el header */
+.py-10 {
+  padding-top: 2.5rem; /* Espacio vertical superior */
+  padding-bottom: 2.5rem; /* Espacio vertical inferior */
+}
+
+/* Sombra para imágenes principales */
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación y transformación en galería de imágenes */
+.hover\:scale-110:hover {
+  transform: scale(1.1);
+}
+
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+.btn {
+  background-color: var(--secundary-bg-color);
+  color: var(--primary-text-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--fourth-bg-color);
+  transform: scale(1.05);
+}
+
+
+/* CSS EN ProductsGrid */
+.title-effect {
+  color:#ffffff;
+  text-shadow: 2px 4px 10px #0077F5;
+  animation: fadeInUp 1s ease-in-out, scaleUp 2s ease-in-out;
+  transition: all 0.5s ease;
+}
+
+.title-effect:hover {
+  transform: scale(1.05);
+  text-shadow: 4px 6px 15px #0077F5;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* EFECTOS IMG BANNER */
+.hero-image {
+  transition: transform 5s ease-in-out;
+  transform: scale(1);
+}
+
+.hero-image:hover {
+  transform: scale(1.09); /* Zoom in cuando el usuario pasa el mouse */
+}
+
+
+/* EFECTOS CARDS */
+
+#borde{
+  background-color: rgba(92, 224, 254, 0.652);
+  border-radius: 20px;
+  margin: 20px;
+}
+
+#cambioborde {
+ 
+  justify-items: center;
+} 
+
+.text-glow {
+  color: white;
+  transition: text-shadow 0.1s ease;
+}
+
+.text-glow:hover {
+  text-shadow: 0 0 10px rgba(19, 2, 116, 0.7), 0 0 20px rgba(5, 2, 151, 0.5);
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+ 
+  --primary-bg-color: #00CAF5;
+  --secundary-bg-color: #0077F5;
+  --third-bg-color: #0000B1;
+  --fourth-bg-color:#0634D8;
+  --primary-text-color: white;
+  --cancel-text-color: rgb(17, 8, 77);
+  background-color: #E1E7F5;
+
+}
+
+.btn{
+  border-radius: 90px;
+  background-color: var(--secundary-bg-color);
+  padding: 10px 20px;
+  color: white;
+}
+
+.btn:hover{
+  background-color: darkblue;
+}
