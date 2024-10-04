@@ -18,13 +18,13 @@ export default function Navbar() {
       <nav>
         <ul className="flex justify-center items-center gap-5">
     
-          <li className="transition-colors duration-300 font-serif hover:text-sky-500">
+          <li className="transition-colors duration-300 font-semibold hover:text-sky-500">
             <Link href={`/`}>Home</Link>
           </li>
-          <li className="transition-colors duration-300 font-serif hover:text-sky-500">
+          <li className="transition-colors duration-300 font-semibold hover:text-sky-500">
             <Link href={`/carteras`}>Carteras</Link>
           </li>
-          <li className="transition-colors duration-300 font-serif hover:text-sky-500">
+          <li className="transition-colors duration-300 font-semibold hover:text-sky-500">
            <Link href={`/contacto`}>Contacto</Link>
           </li>
          

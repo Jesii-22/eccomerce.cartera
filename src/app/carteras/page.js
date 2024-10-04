@@ -12,9 +12,9 @@ const Carteras = async () => {
   }
 
   return (
-    <div>
-      <h1 className="text-5xl font-bold font-serif my-10 text-center title-effect">Galería de Carteras</h1>
-      <div id="cambioborde" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="px-10"> {/* Ajusta el margen lateral */}
+      <h1 className="text-5xl font-semibold text-center text-sky-600 mb-10 transition-transform duration-500 hover:scale-105 hover:text-sky-700"> <br></br> 🧿✨ Galería de Carteras 🧿✨</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-12"> {/* Ajustar los espacios entre productos */}
         {response.products.map((product, index) => {
           const imageName = product.image ? product.image : `cartera.${(index % 8) + 1}.png`;
 

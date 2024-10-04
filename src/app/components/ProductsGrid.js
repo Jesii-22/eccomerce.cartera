@@ -7,9 +7,12 @@ export default async function ProductsGrid() {
   return (
     <section className='mb-10'>
     <Inner>
-      <h2 className='text-5xl font-bold font-serif my-10 text-center title-effect'>
-        Nuestros Productos
+      <div className=''> 
+      <h2 className='text-5xl font-semibold text-center text-sky-600 mb-10 transition-transform duration-500 hover:scale-105 hover:text-sky-700'>
+      <br></br>🧿✨ Nuestros Productos 🧿✨
       </h2>
+
+      </div>
       <div className='grid grid-cols-12 gap-4'>
         {response.products && response.products.map((item, index) => (
           <ProductCard key={index} item={item} />

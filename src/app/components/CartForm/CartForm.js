@@ -43,7 +43,7 @@ const CartForm = () => {
       {({ isSubmitting, errors, touched }) => (
         <Form className="bg-white p-6 rounded-lg shadow-lg">
           <div className="mb-4">
-            <label htmlFor="firstName" className="block text-lg font-serif text-gray-700 mb-2">Nombre</label>
+            <label htmlFor="firstName" className="block text-lg font-semibold text-gray-700 mb-2">Nombre</label>
             <Field
               name="firstName"
               placeholder="Jane"
@@ -54,7 +54,7 @@ const CartForm = () => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="lastName" className="block text-lg font-serif text-gray-700 mb-2">Apellido</label>
+            <label htmlFor="lastName" className="block text-lg font-semibold text-gray-700 mb-2">Apellido</label>
             <Field
               name="lastName"
               placeholder="Doe"
@@ -63,7 +63,7 @@ const CartForm = () => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="email" className="block text-lg font-serif text-gray-700 mb-2">Email</label>
+            <label htmlFor="email" className="block text-lg font-semibold text-gray-700 mb-2">Email</label>
             <Field
               name="email"
               placeholder="jane@acme.com"

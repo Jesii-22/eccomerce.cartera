@@ -9,7 +9,7 @@ const ProductsCheckout = () => {
     
     return (
         <div className='p-4'>
-            <h2 className="text-3xl font-serif text-sky-600 mb-4">Productos en el Carrito</h2>
+          
             <div>
                 {cart.map(product => (
                     <div key={product.id} className='flex justify-between items-center p-2 border-b border-gray-300'> 
@@ -36,7 +36,7 @@ const ProductsCheckout = () => {
                 ))}
             </div>
             <div className="flex flex-col items-end mt-4">
-                <p className="text-2xl font-serif text-sky-500">Total: ${cartTotal().toFixed(2)}</p>
+                <p className="text-2xl font-semibold text-sky-500">Total: ${cartTotal().toFixed(2)}</p>
                 <a 
                     href="https://wa.me/1126444064"
                     target="_blank"

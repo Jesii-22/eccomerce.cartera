@@ -3,6 +3,7 @@ import Image from 'next/image';
 import AddToCart from '@/app/components/AddToCart';
 import { useState } from 'react';
 
+
 const ProductSingle = ({ product }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null); 
 
@@ -23,7 +24,7 @@ const ProductSingle = ({ product }) => {
   };
 
   return (
-    <section className="px-20 pb-20"> 
+    <section className="px-20 pt-15"> 
       <div className="grid grid-cols-12 gap-6">
         
       
@@ -39,34 +40,46 @@ const ProductSingle = ({ product }) => {
           </div>
         </div>
 
-        <div className="col-span-6 flex flex-col items-start space-y-5">
-          <h1 className="text-5xl font-serif font-bold mb-2 text-sky-600 shadow-lg hover:text-sky-300 transition-all duration-300">
+        <div className=" col-span-6 flex flex-col items-start space-y-5">
+          <h1 className=" text-3xl font-semibold  mb-2 text-sky-600 hover:text-sky-300 transition-all duration-300">
             {name}
           </h1>
           
-          <p className="border p-4 mb-4">{descripcion}</p>
+          <p className="border p-3 mb-3">{descripcion}</p>
 
         
-          <div className="flex items-center space-x-4">
-            <span className="bg-sky-600 text-white font-bold py-2 px-4 rounded-full text-2xl hover:bg-sky-700 transition-all duration-300">
+          <div className=" ml-55 pt-15 flex items-center space-x-4">
+            <span className="text-sky-500 font-semibold text-3xl ">
               ${price}
+              <p className=" pr-40 pt-4 text-xs text-green-600 font-semibold mb-2">Hasta 12 cuotas sin interés</p>
+              
+              <Image
+              src={`/imgs/pagos.webp`}
+              width={200}
+              height={100}
+              alt="Opciones de pago"
+            />
+
             </span>
 
+            
 
-            <AddToCart
-              price={price}
-              name={name}
-              image={image}
-              gallery={gallery}
-              descripcion={descripcion}
-              id={_id}
-            />
+            <div className="mt-4 pt-4">
+              <AddToCart
+                price={price}
+                name={name}
+                image={image}
+                gallery={gallery}
+                descripcion={descripcion}
+                id={_id}
+              />
+            </div>
           </div>
         </div>
       </div>
 
       {gallery && gallery.length > 0 && (
-        <div className="mt-10 grid grid-cols-4 gap-1 mb-10"> 
+        <div className="mt-10 flex grid-cols-4 gap-1 mb-10"> 
           {gallery.map((img, index) => (
             <div key={index} className="cursor-pointer">
               <Image

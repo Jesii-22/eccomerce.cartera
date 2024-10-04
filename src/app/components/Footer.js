@@ -28,7 +28,7 @@ const Footer = () => {
 
   return (
     <div
-      className="h-16 bg-sky-300 flex justify-between items-center font-serif text-white px-10 w-full text-2xl font-bold transition-all hover:cursor-pointer hover:bg-sky-400"
+      className="h-16 bg-sky-300 flex justify-between items-center font-semibold text-white px-10 w-full text-2xl  transition-all hover:cursor-pointer hover:bg-sky-400"
       onMouseEnter={handleMouseEnter}
     >
       <div className="transition-transform duration-500 hover:scale-110">
